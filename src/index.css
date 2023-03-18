@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.float {
+  animation: float-animation 2.5s infinite ease-in-out;
+}
+
+@keyframes float-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+}
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+.residents-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  width: 100%;
+  gap: 50px;
+}
+.location-container {
+  background-color: black;
+}
+
+.background-container {
+  height: 100%;
+}
